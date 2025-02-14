@@ -3,24 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> T&P </title>
+    <title>Piercings y Tatuajes</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Color de fondo */
-            color: #333; /* Color del texto */
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #ff6f61, #d8345f);
+            color: #fff;
+            padding: 2em 0;
             text-align: center;
         }
-
-        h1 {
-            color: #FFC0CB; /* Color del título */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
         }
-
-        p {
-            font-size: 18px;
+        nav a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
-
-
+        nav a:hover {
+            background-color: #666;
+        }
+        main {
+            padding: 2em;
+        }
+        section {
+            margin: 2em 0;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #d8345f;
+        }
+        .services img, .products img, .contact img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1em auto;
+            border-radius: 8px;
+        }
+        .product-item {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            padding: 1em;
+            margin: 1em 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: scale(1.02);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            flex: 1 1 50%;
+        }
+        .product-item div {
+            flex: 1 1 50%;
+            padding: 1em;
+        }
+        .product-item h3 {
+            color: #ff6f61;
+        }
+        footer {
+            background-color: #282828;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +102,7 @@
     <main>
         <section id="services" class="services">
             <h2>Servicios</h2>
-            <img src="https://listindiario.com/files/article_main_microformat/uploads/2020/01/14/64310e60adae1.png alt"="Imagen de prueba" width="300">
+            <img src="https://listindiario.com/files/article_main_microformat/uploads/2020/01/14/64310e60adae1.png" alt="Piercing y Tatuajes">
             <p>Ofrecemos una amplia variedad de piercings y tatuajes, realizados con los más altos estándares de higiene y seguridad.</p>
             <ul>
                 <li>Piercings en oreja, nariz, ceja, labio, ombligo y más</li>
@@ -47,24 +113,32 @@
         <section id="products" class="products">
             <h2>Productos</h2>
             <div class="product-item">
-                <h3>Piercing en la oreja</h3>
-                <p>Elegantes y seguros, disponibles en varios estilos y materiales.</p>
-                <p><strong>Precio:</strong> 20€</p>
+                <div>
+                    <h3>Piercing en la oreja</h3>
+                    <p>Elegantes y seguros, disponibles en varios estilos y materiales.</p>
+                    <p><strong>Precio:</strong> 20€</p>
+                </div>
             </div>
             <div class="product-item">
-                <h3>Piercing en la nariz</h3>
-                <p>Diseños únicos y personalizados para todos los gustos.</p>
-                <p><strong>Precio:</strong> 25€</p>
+                <div>
+                    <h3>Piercing en la nariz</h3>
+                    <p>Diseños únicos y personalizados para todos los gustos.</p>
+                    <p><strong>Precio:</strong> 25€</p>
+                </div>
             </div>
             <div class="product-item">
-                <h3>Tatuaje tribal</h3>
-                <p>Arte detallado y simbólico realizado por nuestros expertos tatuadores.</p>
-                <p><strong>Precio:</strong> Desde 50€</p>
+                <div>
+                    <h3>Tatuaje tribal</h3>
+                    <p>Arte detallado y simbólico realizado por nuestros expertos tatuadores.</p>
+                    <p><strong>Precio:</strong> Desde 50€</p>
+                </div>
             </div>
             <div class="product-item">
-                <h3>Tatuaje floral</h3>
-                <p>Hermosos diseños florales con una atención exquisita a los detalles.</p>
-                <p><strong>Precio:</strong> Desde 60€</p>
+                <div>
+                    <h3>Tatuaje floral</h3>
+                    <p>Hermosos diseños florales con una atención exquisita a los detalles.</p>
+                    <p><strong>Precio:</strong> Desde 60€</p>
+                </div>
             </div>
         </section>
         <section id="contact" class="contact">
